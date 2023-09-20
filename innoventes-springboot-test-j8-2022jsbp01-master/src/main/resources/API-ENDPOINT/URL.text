@@ -1,0 +1,58 @@
+H2-DATABASE
+http://localhost:8100/h2-console
+
+
+saveCompany
+http://localhost:8100/api/v1/companies
+
+getById
+http://localhost:8100/api/v1/companies/4
+
+deleteById
+http://localhost:8100/api/v1/companies/4
+
+updateById
+http://localhost:8100/api/v1/companies/4
+
+getAll
+http://localhost:8100/api/v1/companies
+
+JSON format
+
+valid JSON format
+
+{
+    "id": 1,
+    "companyName": "NeBBC",
+    "email": "abc@example.com",
+    "strength": 10,
+    "webSiteURL": "https://www.rel.com",
+    "companyCode": "AB12E"
+}
+
+{
+    "id": 1,
+    "companyName": "New BBC",
+    "email": "abc@example.com",
+    "strength": 15,
+    "webSiteURL": "https://www.rel.com",
+    "companyCode": "AB12E"
+}
+
+
+sql-query to insert into table
+
+INSERT INTO company (id, company_name, email, strength, website_url, company_code, created_date)
+VALUES
+    (1, 'ABC', 'abc@example.com', 100, 'https://www.example.com', 'AB12E', NOW()),
+    (2, 'XYZ', 'xyz@example.com', 150, 'https://www.xyzcompany.com', 'XY34N', NOW()),
+    (3, 'PQR', 'pqr@example.com', 75, 'https://www.pqrco.com', 'PQ23E', NOW()),
+    (4, 'LMN', 'lmn@example.com', 200, 'https://www.lmncompany.com', 'LM45N', NOW()),
+    (5, 'DEF', 'def@example.com', 50, 'https://www.defcorp.com', 'DE67E', NOW()),
+    (6, 'GHI', 'ghi@example.com', 120, 'https://www.ghicompany.com', 'GH89N', NOW()),
+    (7, 'JKL', 'jkl@example.com', 90, 'https://www.jklco.com', 'JK12N', NOW()),
+    (8, 'MNO', 'mno@example.com', 180, 'https://www.mnocompany.com', 'MN34E', NOW()),
+    (9, 'RST', 'rst@example.com', 70, 'https://www.rstcorp.com', 'RS56N', NOW()),
+    (10, 'UVW', 'uvw@example.com', 160, 'https://www.uvwcompany.com', 'UV78N', NOW()),
+    (11, 'XYZ Corp', 'xyzcorp@example.com', 210, 'https://www.xyzcorp.com', 'XY90E', NOW());
+
